@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GradingStudents
 {
@@ -10,52 +7,53 @@ namespace GradingStudents
     {
         static void Main(string[] args)
         {
-            var sampleGrades = new List<int>
+            try
             {
-                73,
-                67,
-                38,
-                33,
-                0
-            };
-
-            var roundedGrades = GradingStudents(sampleGrades);
-
-            foreach (var roundedGrade in roundedGrades)
-            {
-                Console.WriteLine(roundedGrade);
-            }
-
-            Console.ReadLine();
-
-        }
-
-        public static List<int> GradingStudents(List<int> grades)
-        {
-            var roundedGrades = new List<int>();
-
-            foreach (var grade in grades)
-            {
-                // find grades under 38
-                if (grade < 38)
+                // list of students & their grades
+                var students = new List<Student>
                 {
-                    roundedGrades.Add(grade);
-                    continue;
+                    new Student
+                    {
+                        Grade = 73
+                    },
+                    new Student
+                    {
+                        Grade = 67
+                    },
+                    new Student
+                    {
+                        Grade = 38
+                    },
+                    new Student
+                    {
+                        Grade = 33
+                    },
+                    new Student
+                    {
+                        Grade = 0
+                    }
+                };
+
+                // create the grading logic object & perform the grading
+                var gradingLogic = new GradingLogic(students);
+                var roundedGrades = gradingLogic.PerformGrading();
+
+                // show the results
+                foreach (var roundedGrade in roundedGrades)
+                {
+                    Console.WriteLine(roundedGrade);
                 }
-
-                // get the next multiple of 5
-                var nextMultiple = GetNextMultipleOfN(5, grade);
-
-                // add the correct grade
-                roundedGrades.Add((nextMultiple - grade < 3 ? nextMultiple : grade));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            finally
+            {
+                Console.ReadLine();
             }
 
-            return roundedGrades;
-        }
 
-        public static int GetNextMultipleOfN(int n, int number)
-        {
-            return number += (n - number % n);
         }
     }
 }
