@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectronicsShop", "Electron
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradingStudents", "GradingStudents\GradingStudents.csproj", "{343B3F74-6ECD-4670-BD1B-AE5F37F02E98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplesAndOranges", "ApplesAndOranges\ApplesAndOranges.csproj", "{16888761-6F2E-4C35-86FE-505FF4CBB608}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{343B3F74-6ECD-4670-BD1B-AE5F37F02E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{343B3F74-6ECD-4670-BD1B-AE5F37F02E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{343B3F74-6ECD-4670-BD1B-AE5F37F02E98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16888761-6F2E-4C35-86FE-505FF4CBB608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16888761-6F2E-4C35-86FE-505FF4CBB608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16888761-6F2E-4C35-86FE-505FF4CBB608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16888761-6F2E-4C35-86FE-505FF4CBB608}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
