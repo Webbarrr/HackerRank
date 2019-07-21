@@ -47,6 +47,9 @@
     <Compile Include="ApplesAndOranges\Fruit.cs" />
     <Compile Include="ApplesAndOranges\House.cs" />
     <Compile Include="ApplesAndOranges\Orange.cs" />
+    <Compile Include="BirthdayChocolate\ChocolateBar.cs" />
+    <Compile Include="BirthdayChocolate\Person.cs" />
+    <Compile Include="BirthdayChocolate\SegmentCalculator.cs" />
     <Compile Include="BreakingRecords\CalculateBrokenRecords.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

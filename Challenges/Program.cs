@@ -1,5 +1,6 @@
 ﻿using System;
-using Challenges.BreakingRecords;
+using System.Collections.Generic;
+using Challenges.BirthdayChocolate;
 
 namespace Challenges
 {
@@ -7,24 +8,24 @@ namespace Challenges
     {
         static void Main(string[] args)
         {
-            var recordCalculator = new CalculateBrokenRecords();
-
-            var scores = new int[] {12, 24, 10, 24};
-
-            var recordsBroken = recordCalculator.GetBrokenRecords(scores);
-
-            var result = string.Join(" ", recordsBroken);
-
-            Console.WriteLine(result); // expected "1 1"
-
-            scores = new int[] { 3, 4, 21, 36, 10, 28, 35, 5, 24, 42 };
-
-            recordsBroken = recordCalculator.GetBrokenRecords(scores);
-
-            result = string.Join(" ", recordsBroken);
-
-            Console.WriteLine(result); // expected "4 0"
+            Console.WriteLine(Birthday(new List<int>{2, 2, 1, 3, 2},4,2)); // 2
+            Console.WriteLine(Birthday(new List<int>{1, 2, 1, 3, 2},3,2)); // 2
+            Console.WriteLine(Birthday(new List<int>{1,1,1,1,1,1},3,2)); // 0
+            Console.WriteLine(Birthday(new List<int>{4},4,1)); // 1
             Console.ReadLine();
+        }
+
+        static int Birthday(List<int> s, int d, int m)
+        {
+            // create the person & chocolate bar
+            var person = new Person {BirthDate = d, BirthMonth = m};
+            var chocolateBar = new ChocolateBar {Segments = s};
+
+            // create the segment calculator
+            var segmentCalculator = new SegmentCalculator();
+
+            // return the count
+            return segmentCalculator.CalculateSegments(person, chocolateBar);
         }
     }
 }
