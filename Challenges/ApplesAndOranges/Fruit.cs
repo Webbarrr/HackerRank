@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Console = System.Console;
 
 namespace ApplesAndOranges
 {
-    class Program
+    public abstract class Fruit
     {
-        static void Main(string[] args)
-        {
-        }
-
+        public abstract int[] FallenPositions { get; set; }
+        public abstract int Location { get; set; }
     }
 }

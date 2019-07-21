@@ -1,17 +1,17 @@
-﻿using NUnit.Framework;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using NUnit.Framework;
 
-namespace BetweenTwoSets.Tests
+namespace BetweenTwoSets.Tests.SetLogic
 {
     [TestFixture]
     public class SetLogicTests
     {
-        private SetLogic _setLogic;
+        private BetweenTwoSets.SetLogic _setLogic;
 
         [SetUp]
         public void SetUp()
         {
-            _setLogic = new SetLogic();
+            _setLogic = new BetweenTwoSets.SetLogic();
         }
 
         [Test]
