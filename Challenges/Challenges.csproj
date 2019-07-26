@@ -52,14 +52,14 @@
     <Compile Include="BirthdayChocolate\SegmentCalculator.cs" />
     <Compile Include="BreakingRecords\CalculateBrokenRecords.cs" />
     <Compile Include="DivisibleSumPairs\ArrayCalculator.cs" />
+    <Compile Include="MigratoryBirds\Bird.cs" />
+    <Compile Include="MigratoryBirds\BirdWatcher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MigratoryBirds\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
