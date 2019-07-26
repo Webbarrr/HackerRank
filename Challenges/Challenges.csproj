@@ -51,6 +51,7 @@
     <Compile Include="BirthdayChocolate\Person.cs" />
     <Compile Include="BirthdayChocolate\SegmentCalculator.cs" />
     <Compile Include="BreakingRecords\CalculateBrokenRecords.cs" />
+    <Compile Include="DivisibleSumPairs\ArrayCalculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

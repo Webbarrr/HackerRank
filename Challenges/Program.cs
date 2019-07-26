@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using Challenges.BirthdayChocolate;
+using Challenges.DivisibleSumPairs;
 
 namespace Challenges
 {
@@ -8,24 +7,21 @@ namespace Challenges
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Birthday(new List<int>{2, 2, 1, 3, 2},4,2)); // 2
-            Console.WriteLine(Birthday(new List<int>{1, 2, 1, 3, 2},3,2)); // 2
-            Console.WriteLine(Birthday(new List<int>{1,1,1,1,1,1},3,2)); // 0
-            Console.WriteLine(Birthday(new List<int>{4},4,1)); // 1
+            // test 1
+            var result = DivisibleSumPairs(6, 5, new[] {1, 2, 3, 4, 5, 6});
+            Console.WriteLine(result); // expecting 3
+
+            result = DivisibleSumPairs(6, 3, new[] {1, 3, 2, 6, 1, 2});
+            Console.WriteLine(result); // expecting 5
+
             Console.ReadLine();
         }
 
-        static int Birthday(List<int> s, int d, int m)
+        static int DivisibleSumPairs(int n, int k, int[] ar)
         {
-            // create the person & chocolate bar
-            var person = new Person {BirthDate = d, BirthMonth = m};
-            var chocolateBar = new ChocolateBar {Segments = s};
+            var arrayCalculator = new ArrayCalculator();
 
-            // create the segment calculator
-            var segmentCalculator = new SegmentCalculator();
-
-            // return the count
-            return segmentCalculator.CalculateSegments(person, chocolateBar);
+            return arrayCalculator.GetDivisibleSumPairCount(k, ar);
         }
     }
 }
