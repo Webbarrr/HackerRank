@@ -51,6 +51,7 @@
     <Compile Include="BirthdayChocolate\Person.cs" />
     <Compile Include="BirthdayChocolate\SegmentCalculator.cs" />
     <Compile Include="BreakingRecords\CalculateBrokenRecords.cs" />
+    <Compile Include="DayOfTheProgrammer\TimeMachine.cs" />
     <Compile Include="DivisibleSumPairs\ArrayCalculator.cs" />
     <Compile Include="MigratoryBirds\Bird.cs" />
     <Compile Include="MigratoryBirds\BirdWatcher.cs" />
