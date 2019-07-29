@@ -50,6 +50,9 @@
     <Compile Include="BirthdayChocolate\ChocolateBar.cs" />
     <Compile Include="BirthdayChocolate\Person.cs" />
     <Compile Include="BirthdayChocolate\SegmentCalculator.cs" />
+    <Compile Include="BonAppetit\BillCalculator.cs" />
+    <Compile Include="BonAppetit\Customer.cs" />
+    <Compile Include="BonAppetit\Restaurant.cs" />
     <Compile Include="BreakingRecords\CalculateBrokenRecords.cs" />
     <Compile Include="DayOfTheProgrammer\TimeMachine.cs" />
     <Compile Include="DivisibleSumPairs\ArrayCalculator.cs" />
